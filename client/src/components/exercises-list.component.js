@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import {BACKEND_URL} from '../config'
+import { BACKEND_URL } from '../config';
 // Single Exercise Component
 const Exercise = (props) => {
   return (
@@ -13,7 +13,7 @@ const Exercise = (props) => {
       <td>
         <Link to={"/edit/" + props.exercise._id}>edit</Link>|{" "}
         <a 
-        href="/"
+        href="#"
         onClick={() =>{props.deleteExercise(props.exercise._id)}}
         >
           delete
